@@ -1,0 +1,81 @@
+{
+    
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "g++ build active file",
+            "type": "shell",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-I",
+                "${config:vulkan_paths.VulkanIncludePath}",
+                "-L",
+                "${config:vulkan_paths.VulkanLibPath}",
+                "-l",
+                "vulkan",
+                "-l",
+                "glfw",
+                "-std=${config:cpp.std}",
+                "-o",
+                "${fileDirname}/tmp-build/${fileBasenameNoExtension}.exe"
+            ],
+            "problemMatcher": { 
+                "base": "$gcc", 
+                "fileLocation": [ "absolute" ],
+                "pattern": { 
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(.*)$", 
+                             "file": 1, "line": 2, "column": 3, "message": 4 
+                } 
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "clang++ build active file",
+            "type": "shell",
+            "command": "/usr/bin/clang++",
+            "args": [
+                "-g",
+                "${file}",
+                "-I",
+                "${config:vulkan_paths.VulkanIncludePath}",
+                "-L",
+                "${config:vulkan_paths.VulkanLibPath}",
+                "-l",
+                "vulkan",
+                "-l",
+                "glfw",
+                "-std=${config:cpp.std}",
+                "-o",
+                "${fileDirname}/tmp-build/${fileBasenameNoExtension}.exe"
+            ],
+            "problemMatcher": { 
+                "base": "$gcc", 
+                "fileLocation": [ "absolute" ],
+                "pattern": { 
+                    "regexp": "^(.*):(\\d+):(\\d+):\\s+(.*)$", 
+                             "file": 1, "line": 2, "column": 3, "message": 4 
+                } 
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "diagnostics",
+            "type": "shell",
+            "command": "echo",
+            "args": [
+                "${env:VULKAN_ROOT}",
+                "${config:vulkan_paths.VulkanIncludePath}",
+                "${config:cpp.std}"
+            ]
+        }
+
+    ]
+}
