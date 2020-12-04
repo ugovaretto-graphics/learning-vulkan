@@ -1,5 +1,0 @@
-/home/ugovaretto/projects/vulkan/vulkan-learn/build/CMakeFiles/rebuild_cache.dir
-/home/ugovaretto/projects/vulkan/vulkan-learn/build/CMakeFiles/edit_cache.dir
-/home/ugovaretto/projects/vulkan/vulkan-learn/build/src/CMakeFiles/rebuild_cache.dir
-/home/ugovaretto/projects/vulkan/vulkan-learn/build/src/CMakeFiles/edit_cache.dir
-/home/ugovaretto/projects/vulkan/vulkan-learn/build/src/CMakeFiles/init.dir

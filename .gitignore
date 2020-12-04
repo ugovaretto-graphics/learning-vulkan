@@ -5,3 +5,4 @@ tmp*
 *.so
 *.a
 .vscode
+build

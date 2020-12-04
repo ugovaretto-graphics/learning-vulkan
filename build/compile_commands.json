@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/ugovaretto/projects/vulkan/vulkan-learn/build/src",
-  "command": "/usr/bin/c++  -DVK_USE_PLATFORM_XLIB_KHR  -g   -std=gnu++17 -o CMakeFiles/init.dir/init.cpp.o -c /home/ugovaretto/projects/vulkan/vulkan-learn/src/init.cpp",
-  "file": "/home/ugovaretto/projects/vulkan/vulkan-learn/src/init.cpp"
-}
-]
