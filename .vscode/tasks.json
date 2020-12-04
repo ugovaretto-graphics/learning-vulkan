@@ -19,7 +19,8 @@
                 "glfw",
                 "-std=${config:cpp.std}",
                 "-o",
-                "${fileDirname}/tmp-build/${fileBasenameNoExtension}.exe"
+                "${fileDirname}/tmp-build/${fileBasenameNoExtension}.exe",
+                "-pthread"
             ],
             "problemMatcher": { 
                 "base": "$gcc", 

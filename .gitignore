@@ -1,0 +1,7 @@
+tmp*
+*~
+*.out
+*.exe
+*.so
+*.a
+.vscode
